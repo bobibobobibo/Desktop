@@ -1,0 +1,307 @@
+/* 全域樣式 */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --dark-color: #343a40;
+}
+
+body {
+    font-family: 'Arial', '微軟正黑體', sans-serif;
+    line-height: 1.6;
+}
+
+/* 導航欄樣式 */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 首頁橫幅 */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 80px;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+}
+
+/* 關於我們區塊 */
+.feature-box {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background: #f8f9fa;
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+.feature-box i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* 圖片展示區 */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* 聯絡表單 */
+#contactForm {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    border-radius: 0;
+    padding: 0.8rem 0;
+    margin-bottom: 1rem;
+    background: transparent;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--dark-color);
+}
+
+/* 社群連結 */
+.social-links a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* 總統介紹區塊 */
+.president-image img {
+    max-width: 400px;
+    border: 8px solid white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.president-image img:hover {
+    transform: scale(1.05);
+}
+
+.president-info h2 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.president-info .lead {
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.detail-item i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.president-social .btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+}
+
+.president-social .btn i {
+    margin-right: 0.5rem;
+}
+
+/* 景點卡片樣式 */
+.attraction-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.attraction-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.attraction-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.attraction-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.attraction-card:hover .attraction-image img {
+    transform: scale(1.1);
+}
+
+.attraction-content {
+    padding: 1.5rem;
+}
+
+.attraction-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.location {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.location i {
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+}
+
+.description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+.attraction-features {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.attraction-features span {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+}
+
+.attraction-features i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+/* 部長介紹卡片 */
+.minister-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.minister-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.minister-image img:hover {
+    transform: scale(1.05);
+}
+
+.minister-info h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.minister-info .minister-name {
+    color: var(--dark-color);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.minister-details {
+    margin: 1.5rem 0;
+}
+
+.minister-details .detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.minister-details .detail-item i {
+    width: 25px;
+    color: var(--primary-color);
+    margin-right: 1rem;
+}
+
+.minister-description {
+    color: var(--secondary-color);
+    line-height: 1.8;
+}
+
+.minister-contact .btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    .attraction-image {
+        height: 200px;
+    }
+
+    .attraction-content {
+        padding: 1rem;
+    }
+
+    .attraction-content h3 {
+        font-size: 1.25rem;
+    }
+}
